@@ -14,7 +14,7 @@ main {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  min-width: 100%;
+  min-width: 100vw;
   background: linear-gradient(to right top, #65dfc9, #6cdbeb);
 }
 
@@ -126,10 +126,10 @@ section {
 }
 
 #refresh-div {
-  position: relative;
+  position: absolute;
   display: flex;
   align-items: center;
-  bottom: 10vh;
+  bottom: 5vh;
   z-index: 3;
   overflow: visible;
 }

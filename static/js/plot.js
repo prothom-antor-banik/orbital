@@ -115,23 +115,26 @@ form.addEventListener("submit", (event) => {
       document.getElementsByClassName("main-svg")[2].style.width = "0%";
       document.getElementsByClassName("main-svg")[2].style.height = "0%";
 
-      document.getElementsByClassName("svg-container")[0].style.position =
-        "relative";
-      document.getElementsByClassName("svg-container")[0].style.height =
-        "100vh";
+      document.getElementsByClassName("svg-container")[0].style.position = "absolute";
+      document.getElementsByClassName("svg-container")[0].style.height = "100vh";
       document.getElementsByClassName("svg-container")[0].style.width = "100vw";
+      document.getElementsByClassName("svg-container")[0].style.top = "0vh";
+      document.getElementsByClassName("svg-container")[0].style.left = "0vh";
+
 
       document.getElementsByClassName("user-select-none")[0].style.position =
-        "relative";
+        "absolute";
       document.getElementsByClassName("user-select-none")[0].style.height =
         "100vh";
       document.getElementsByClassName("user-select-none")[0].style.width =
         "100vw";
+      document.getElementsByClassName("user-select-none")[0].style.top = "0vh";
+      document.getElementsByClassName("user-select-none")[0].style.left = "0vh";
 
-      document.getElementById("scene").style.position = null;
-      document.getElementById("scene").style.paddingTop = "15vh";
-      document.getElementById("scene").style.height = "70vh";
-      document.getElementById("scene").style.width = "70vw";
+
+      document.getElementById("scene").style.position = "relative";
+      document.getElementById("scene").style.height = "75vh";
+      document.getElementById("scene").style.width = "75vw";
       document.getElementById("scene").style.alignItems = "center";
     } catch (error) {}
   }
