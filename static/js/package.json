@@ -1,0 +1,13 @@
+{
+  "name": "plot_hydrogen_atomic_orbital",
+  "version": "1.0.0",
+  "description": "This is just a module to plot hydrogen orbital in the web.",
+  "main": "plot.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Antor Banik",
+  "license": "ISC",
+  "dependencies": {}
+}

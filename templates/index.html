@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <title>Orbital</title>
+  </head>
+  <body>
+<main>
+  <section class="form-section">
+    <h2>Visualise Atomic Orbital</h2>
+    <form id="form">
+      <label for="n"> Principal Quantum Number </label>
+      <input id="n" type="text" name="n" placeholder="Principal" required />
+      <label for="l">Azimuthal Quantum Number</label>
+      <input id="l" type="text" name="l" placeholder="Azimuthal" required />
+      <label for="m"> Magnetic Quantum Number</label>
+      <input id="m" type="text" name="m" placeholder="Magnetic" required />
+      <div id="error"></div>
+      <div>
+        <button id="submitBtn" type="submit">Submit</button>
+      </div>
+    </form>
+  </section>
+  <section class="plot-section hidden">
+    <div id="plot"></div>
+    <div id="refresh-div">
+      <script>
+        function refreshPage() {
+          window.location.reload();
+        }
+      </script>
+      <button
+        type="submit"
+        id="refreshBtn"
+        class="hidden"
+        onclick="refreshPage();"
+      >
+        Refresh!
+      </button>
+    </div>
+  </section>
+  <div id="particles-js"></div>
+</main>
+<script src="../static/js/particle-js/particles.js"></script>
+<script src="../static/js/particle-js/app.js"></script>
+<script type="module" src="../static/js/plot.js"></script>
+</body>
+</html>
