@@ -2,18 +2,6 @@ import { normalizationConst, associatedLeg } from "./function.js";
 import { radian, spherToCart } from "./utils.js";
 import "https://cdn.plot.ly/plotly-2.11.1.min.js";
 
-const result = (l, m, x, phi) => {
-  if (m >= 0)
-    return (
-      Math.cos(m * phi) * associatedLeg(l, m, x) * normalizationConst(l, m)
-    );
-  else {
-    m = Math.abs(m);
-    return (
-      Math.sin(m * phi) * associatedLeg(l, m, x) * normalizationConst(l, m)
-    );
-  }
-};
 
 let L, M;
 
@@ -30,12 +18,25 @@ let data = [
     z: c,
     opacity: 1,
     line: {
-      width: 6,
+      width: 10,
       color: c,
       reversescale: false,
     },
   },
 ];
+
+function result(l, m, x, phi){
+  if (m >= 0)
+    return (
+      Math.cos(m * phi) * associatedLeg(l, m, x) * normalizationConst(l, m)
+    );
+  else {
+    m = Math.abs(m);
+    return (
+      Math.sin(m * phi) * associatedLeg(l, m, x) * normalizationConst(l, m)
+    );
+  }
+};
 
 function calculate(a = [], b = [], c = []) {
   for (let i = 0; i <= 360; i++) {
@@ -112,31 +113,26 @@ form.addEventListener("submit", (event) => {
       document.getElementsByClassName("main-svg")[1].style.width = "0%";
       document.getElementsByClassName("main-svg")[1].style.height = "0%";
 
-      document.getElementsByClassName("main-svg")[2].style.width = "0%";
-      document.getElementsByClassName("main-svg")[2].style.height = "0%";
-
       document.getElementsByClassName("svg-container")[0].style.position = "absolute";
       document.getElementsByClassName("svg-container")[0].style.height = "100vh";
       document.getElementsByClassName("svg-container")[0].style.width = "100vw";
-      document.getElementsByClassName("svg-container")[0].style.top = "0vh";
+      document.getElementsByClassName("svg-container")[0].style.top = "5vh";
       document.getElementsByClassName("svg-container")[0].style.left = "0vh";
 
-
-      document.getElementsByClassName("user-select-none")[0].style.position =
-        "absolute";
-      document.getElementsByClassName("user-select-none")[0].style.height =
-        "100vh";
-      document.getElementsByClassName("user-select-none")[0].style.width =
-        "100vw";
+      document.getElementsByClassName("user-select-none")[0].style.position = "absolute";
+      document.getElementsByClassName("user-select-none")[0].style.height = "100vh";
+      document.getElementsByClassName("user-select-none")[0].style.width = "100vw";
       document.getElementsByClassName("user-select-none")[0].style.top = "0vh";
       document.getElementsByClassName("user-select-none")[0].style.left = "0vh";
 
-
       document.getElementById("scene").style.position = "relative";
-      document.getElementById("scene").style.height = "75vh";
-      document.getElementById("scene").style.width = "75vw";
+      document.getElementById("scene").style.height = "80vh";
+      document.getElementById("scene").style.width = "100vw";
+      document.getElementById("scene").style.top = "0vh";
+      document.getElementById("scene").style.left = "0vw";
       document.getElementById("scene").style.alignItems = "center";
-    } catch (error) {}
+
+    } catch (err) {}
   }
   event.preventDefault();
 });
