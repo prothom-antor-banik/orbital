@@ -116,19 +116,19 @@ form.addEventListener("submit", (event) => {
       document.getElementsByClassName("svg-container")[0].style.position = "absolute";
       document.getElementsByClassName("svg-container")[0].style.height = "100vh";
       document.getElementsByClassName("svg-container")[0].style.width = "100vw";
-      document.getElementsByClassName("svg-container")[0].style.top = "5vh";
-      document.getElementsByClassName("svg-container")[0].style.left = "0vh";
+      document.getElementsByClassName("svg-container")[0].style.top = "0vh";
+      document.getElementsByClassName("svg-container")[0].style.left = "0vw";
 
       document.getElementsByClassName("user-select-none")[0].style.position = "absolute";
       document.getElementsByClassName("user-select-none")[0].style.height = "100vh";
       document.getElementsByClassName("user-select-none")[0].style.width = "100vw";
       document.getElementsByClassName("user-select-none")[0].style.top = "0vh";
-      document.getElementsByClassName("user-select-none")[0].style.left = "0vh";
+      document.getElementsByClassName("user-select-none")[0].style.left = "0vw";
 
       document.getElementById("scene").style.position = "relative";
       document.getElementById("scene").style.height = "80vh";
       document.getElementById("scene").style.width = "100vw";
-      document.getElementById("scene").style.top = "0vh";
+      document.getElementById("scene").style.top = "5vh";
       document.getElementById("scene").style.left = "0vw";
       document.getElementById("scene").style.alignItems = "center";
 
