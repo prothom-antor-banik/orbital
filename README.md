@@ -24,12 +24,11 @@ shape of the orbital.
 
 Calculation :
 
-    Y(θ, φ) = N(l, m) x P<sup>m</sup><sub>l</sub>(cosθ) x e<sup>imφ</sup>
+Y(θ, φ) = N(l, m) x P <sup> m</sup><sub>l</sub>(cosθ) x e<sup>imφ</sup>
 
 Here,
     N(l, m) stands for Normalisation Constant which depends on l, m.
-    P<sup>m</sup><sub>l</sub>(cosθ) stands for Associated Legendre Polynomial which 
-    depends on l, m and cosθ.
+    P<sup>m</sup><sub>l</sub>(cosθ) stands for Associated Legendre Polynomial which depends on l, m and cosθ.
     e<sup>imφ</sup> is Euler's equation, e raised to the power of (i x m x φ).
 
 • Legendre Polynomial
@@ -54,7 +53,9 @@ electron at θ, φ spherical coordinate. Then the θ, φ is converted into
 plotting but not responsive at all.I had to put some additional styling to make it responsive which is in the plot.js file looking redundant but important.
 
 • To know about Hydrogen Wave Function
+
 https://youtube.com/playlist?list=PLrUDBH2CfIykFmjq0b_fBPKj-3qqicI7f
+
 https://youtu.be/V-RPM3e8Ws0
 
 Plotting the orbitals with Plotly.js library was easy.
