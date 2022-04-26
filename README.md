@@ -27,9 +27,9 @@ Calculation :
 Y(θ, φ) = N(l, m) x P <sup> m</sup><sub>l</sub>(cosθ) x e<sup>imφ</sup>
 
 Here,
-    N(l, m) stands for Normalisation Constant which depends on l, m.
-    P<sup>m</sup><sub>l</sub>(cosθ) stands for Associated Legendre Polynomial which depends on l, m and cosθ.
-    e<sup>imφ</sup> is Euler's equation, e raised to the power of (i x m x φ).
+N(l, m) stands for Normalisation Constant which depends on l, m.
+P<sup>m</sup><sub>l</sub>(cosθ) stands for Associated Legendre Polynomial which depends on l, m and cosθ.
+e<sup>imφ</sup> is Euler's equation, e raised to the power of (i x m x φ).
 
 • Legendre Polynomial
 https://en.m.wikipedia.org/wiki/Legendre_polynomials
